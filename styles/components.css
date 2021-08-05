@@ -1,0 +1,47 @@
+#search-bar {
+    padding: 0 15px 0 15px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    border: 1px solid rgba(219, 219, 219, 0.719); 
+    width: 90%;
+    max-width: 600px; 
+    height: 45px;
+}
+#search-bar:hover {
+    box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.09);
+}
+
+#search-bar input { 
+    height: 65%;
+    width: 93%;
+    border: none;
+    outline: none;
+}
+
+#search-bar .search-icon {
+    cursor: default; 
+    color: rgb(175, 175, 175); 
+}
+
+#github-profile {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+}
+
+
+.function-button {
+    padding: 6px;
+    width: 40px; 
+    height: 40px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.function-button:hover {
+    text-decoration: none;
+    background: rgba(219, 219, 219, 0.719);
+}
