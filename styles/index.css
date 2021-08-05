@@ -1,27 +1,4 @@
-/* || BASICS */
-* {
-    box-sizing: border-box; 
-} 
-
-html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    font-family: sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: initial;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.material-icons {
-    font-family: "Material Icons";
-}
+@import "reset.css";
 
 /* || NAV BAR */ 
 nav {
@@ -116,6 +93,7 @@ main {
 }
 
 #search-bar .search-icon {
+    cursor: default; 
     color: rgb(175, 175, 175); 
 }
 
@@ -123,6 +101,7 @@ main {
     margin-bottom: 15px;
 }
 button {
+    cursor: pointer;
     font-size: 13px;
     border-radius: 3px;
     padding: 0 20px;

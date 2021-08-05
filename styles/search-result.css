@@ -1,0 +1,27 @@
+@import "reset.css";
+
+body {
+
+    position: relative;
+}
+/* || NAVBAR */ 
+nav {
+    height: 134px; 
+    background: rgb(240, 137, 137); 
+}
+
+
+/* || MAIN (SEARCH RESULTS) */ 
+main {
+    background: rgb(138, 138, 238); 
+}
+
+
+/* || FOOTER */ 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
+    background: gray;
+}
