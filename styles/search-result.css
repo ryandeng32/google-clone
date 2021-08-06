@@ -59,14 +59,12 @@ nav {
     grid-template-columns: repeat(6, auto) 170px;
     margin: 0;
     grid-area: nav-links;
-    align-items: baseline;
+    align-items: center;
     justify-items: left;
 }
 
 .nav-links a {
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 13px;
     padding: 10px;
     color: rgb(100, 100, 100);
@@ -141,7 +139,7 @@ main {
 
 .result-description {
     width: 90%;
-    color: rgb(73, 73, 73)
+    color: rgb(73, 73, 73);
 }
 
 .result-visit-times {
@@ -152,9 +150,217 @@ main {
 .result-extra-link  {
     margin-top: 5px;
 }
+
+
+/* dropdown box */ 
+.drop-down-box {
+    margin-bottom: 50px;
+}
+.drop-down-title {
+    padding: 10px 0; 
+    font-size: 18px;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.473);
+}
+
+.drop-down-row {
+    position: relative;
+    font-size: 14px;
+    padding: 5px 0;
+    color: rgb(48, 48, 48);
+    border-bottom: 1px solid rgba(206, 206, 206, 0.473);
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-down-last {
+    border: none;
+}
+
+.drop-down-last-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-down-last-line hr {
+    width: 90%;
+    height: 0.1px;
+    border-top: none;
+    margin: 0;
+    color: rgba(206, 206, 206, 0.657);
+}
+
+.drop-down-last-line a {
+    font-size: 11px;
+    color :gray;
+}
+
+.drop-down-open {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.473);
+
+}
+
+.drop-down-open .drop-down-row {
+    border: none;
+}
+.drop-down-images {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-down-fig {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.drop-down-image  {
+    height: 80px; 
+    width: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-down-image .layer {
+    position: absolute;
+    height: 80px; 
+    width: 80px; 
+    border-radius: 10px;
+    background: rgba(209, 209, 209, 0.253);
+    order: 2;
+}
+
+.drop-down-fig img {
+    order: -1;
+    border-radius: 10px;
+    height: auto;
+    width: 80px;
+}
+
+.drop-down-fig p {
+    font-size: 12px;
+}
+
+.drop-down-open button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgb(219, 219, 219);
+    margin: 0 auto;
+    transition: 0.2s;
+    color: rgb(0, 53, 168);
+}
+
+.drop-down-open button .material-icons {
+    font-size: 15px;
+}
+
+.drop-down-open button:hover {
+    background: rgba(243, 243, 243, 0.589);
+}
+.flex-left {
+    position: absolute;
+    left: 10px;
+}
+
+.drop-down-row.with-logo {
+    padding-left: 50px;
+}
+.drop-down-row  .logo-tiny {
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+
+/* search suggestions */ 
+.search-suggestions {
+    margin-top: 25px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.search-suggestions button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 20px 20px 20px 30px;
+}
+
+
+/* select-pages */ 
+.select-pages {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid; 
+    grid-template-columns: 200px 10px; 
+    grid-template-rows: auto 10px;
+    align-items: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    font-size: 12px;
+}
+
+.select-pages img {
+    grid-column: 1/2; 
+    width: 80%;
+    grid-row: 1/2;
+}
+
+.select-pages .material-icons {
+    color :rgb(59, 59, 202);
+    grid-column: 2/3; 
+    grid-row: 1/2;
+}
+
+.select-pages .pages {
+    grid-column: 1/2; 
+    grid-row: 2/3;}
+
+.select-pages p {
+    grid-column: 2/3; 
+    grid-row: 2/3;
+    color :rgb(59, 59, 202);
+} 
 /* || FOOTER */ 
 footer {
     width: 100%;
-    height: 100px; 
+    height: 55px;
+    display: flex; 
+    padding: 0 35px;
+    align-items: center;
+    border-top: 1px solid rgba(202, 202, 202, 0.336);
     background: rgba(235, 235, 235, 0.568);
+}
+
+footer .footer-links {
+    margin-left: 160px;
+}
+footer a {
+    margin-right: 20px;
+    color: rgb(122, 122, 122);
+    font-size: 12px;
 }

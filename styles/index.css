@@ -35,6 +35,11 @@ nav a {
 }
 
 /* || MAIN CONTENT */ 
+
+body {
+    height: 100vh;
+}
+
 main {
     width: 100%;
     height: 55%;
