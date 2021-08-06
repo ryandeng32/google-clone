@@ -61,6 +61,10 @@ main #search-bar {
     margin-bottom: 25px;
 }
 
+.click-me {
+    background: rgb(114, 114, 114);
+    color: white;
+}
 .buttons {
     margin-bottom: 15px;
 }
